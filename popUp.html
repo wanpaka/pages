@@ -1,0 +1,30 @@
+<html>
+
+	<head>
+	<script>
+		function getXmlHttpObject() {
+		    var xmlHttp;
+		    try {
+		        // Firefox, Opera 8.0+, Safari
+		        xmlHttp = new XMLHttpRequest();
+		    } catch (e) {
+		        // Internet Explorer
+		        try {
+		            xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+		        } catch (e) {
+		            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		        }
+		    }
+		    if (!xmlHttp) {
+		        alert("Your browser does not support AJAX!");
+		    }
+		    console.log(xmlHttp);
+		    return xmlHttp;
+		}
+	</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>
