@@ -1,1 +1,0 @@
-# wanpakaworld.github.io
